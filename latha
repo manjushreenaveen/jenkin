@@ -28,7 +28,7 @@ stage('TriggerDownstreamJob'){
 build job: 'pipelinescriptwithbuildparameters'
 }
 
-
+/*
 stage('ExecuteSonarQubeReport')
 {
 sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -44,7 +44,7 @@ stage('DeployAppIntoTomcatServer')
  sshagent(['4bf591aa-c145-4761-bcaa-2de44ce0e7ae']) {
 	 sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@172.31.46.210:/opt/apache-tomcat-9.0.63/webapps"
 }
- 
+ */
 }
 
 }
