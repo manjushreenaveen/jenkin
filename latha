@@ -1,6 +1,6 @@
 
 
-node
+node('nodes')
 {
     def mavenHome = tool name: "maveen3.8.5"
     
